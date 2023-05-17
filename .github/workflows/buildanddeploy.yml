@@ -2,7 +2,7 @@ name: Build and Push the Docker image to GCP
 on:
   push:
     branches: [ master ]
-    
+
 jobs:
   build-and-push:
     name: Build and Push to GCP
@@ -14,7 +14,7 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - uses: google-github-actions/setup-gcloud@master
+    - uses: google-github-actions/setup-gcloud@main
       with:
         service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
         project_id: ${{ env.PROJECT_ID }}
