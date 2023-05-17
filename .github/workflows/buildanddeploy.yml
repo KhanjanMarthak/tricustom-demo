@@ -30,6 +30,6 @@ jobs:
 
     - name: Push Docker Image to Artifact Registry
       run: |-
-        docker tag $IMAGE_NAME:latest us-east1-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:latest
-        docker push us-east1-docker.pkg.dev/$PROJECT_ID/images/$IMAGE_NAME:latest
+        docker tag $IMAGE_NAME:latest us-east1-docker.pkg.dev/$PROJECT_ID/tricustom-repository/$IMAGE_NAME:latest
+        docker push us-east1-docker.pkg.dev/$PROJECT_ID/tricustom-repository/$IMAGE_NAME:latest
        
