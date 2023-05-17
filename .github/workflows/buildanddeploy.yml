@@ -2,11 +2,12 @@ name: Build and Push the Docker image to GCP
 on:
   push:
     branches: [ master ]
+    
 jobs:
   build-and-push:
     name: Build and Push to GCP
     runs-on: ubuntu-latest
-   env:
+    env:
       IMAGE_NAME: tricustom-demo
       PROJECT_ID: tricustom
     steps:
