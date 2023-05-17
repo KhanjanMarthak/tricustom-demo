@@ -32,6 +32,6 @@ export const userTable = dbConnection.define(
     },
   },
   {
-    tableName: "users",
+    tableName: "Users",
   }
 );
