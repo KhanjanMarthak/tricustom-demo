@@ -29,9 +29,9 @@ jobs:
         port=9000
         dbHost=127.0.0.1
         dbPort=5432
-        postgres_dbname='${{ secrets.DB_NAME }}'
-        postgres_username='${{ secrets.DB_USERNAME }}'
-        postgres_password='${{ secrets.DB_PASSWORD }}'
+        postgres_dbname=${{ secrets.DB_NAME }}
+        postgres_username=${{ secrets.DB_USERNAME }}
+        postgres_password=${{ secrets.DB_PASSWORD }}
         EOF
         cat .env
 
